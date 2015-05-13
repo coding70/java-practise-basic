@@ -1,0 +1,43 @@
+//5.java practise program for counting no. of objects using STATIC keyword from outside the class
+
+import java.io.*;
+
+
+
+class n
+{
+    String name;
+        int age;
+       static  int count=0;
+    public void human()
+    {
+        System.out.println("my name is "+name+" and age is "+age);
+        count++;
+    }
+     public static void printcount()
+    {
+        System.out.println(count);
+    }
+}
+public class NewClass {
+    
+    public static void main(String[]args)throws IOException
+    {
+        //1st object
+        n rish = new n();
+        rish.name="rishabh";
+        rish.age=20;
+        rish.human();
+        //2nd object
+        n ris = new n();
+        ris.name="vaibhav";
+        ris.age=24;
+        ris.human();
+        //3rd object
+        n risi = new n();
+        risi.name="rinki";
+        risi.age=25;
+        risi.human();
+        n.printcount();
+    }
+}
