@@ -1,0 +1,28 @@
+//3.java practise program for object of class and copy one object contents to other object 
+import java.io.*;
+
+public class NewClass {
+    String name;
+        int age;
+    public void human()
+    {
+        System.out.println("my name is "+name+" and age is "+age);
+    }
+    public void copy(NewClass org)
+    {
+        name=org.name;
+        age=org.age;
+        System.out.println("the copied ---");
+        System.out.println("my name is "+name+" and age is "+age);
+    }
+    public static void main(String[]args)throws IOException
+    {
+        NewClass rish = new NewClass();
+        rish.name="rishabh";
+        rish.age=20;
+        rish.human();
+        NewClass has = new NewClass();
+        has.copy(rish);
+        has.human();
+    }
+}
