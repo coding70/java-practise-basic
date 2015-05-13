@@ -1,0 +1,25 @@
+//3.java practise program for counting no. of objects using STATIC keyword 
+import java.io.*;
+
+public class NewClass {
+    String name;
+        int age;
+       static  int count=0;
+    public void human()
+    {
+        System.out.println("my name is "+name+" and age is "+age);
+        count++;
+    }
+    public static void main(String[]args)throws IOException
+    {
+        //1st object
+        NewClass rish = new NewClass();
+        rish.name="rishabh";
+        rish.age=20;
+        rish.human();
+        //2nd object
+        NewClass has = new NewClass();
+        has.human();
+        System.out.println(count);
+    }
+}
