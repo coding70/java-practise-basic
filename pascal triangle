@@ -1,6 +1,6 @@
 import java.io.*;
 
-ublic class pascaltriangle {
+public class pascaltriangle {
     public static void main(String[]args)throws IOException
     {
         BufferedReader o = new BufferedReader(new InputStreamReader(System.in));
